@@ -38,5 +38,10 @@
         "name": "2-check.ttf",
         "type": "application/octet-stream",
         "size": 12348
+    },
+    "983014.png": {
+        "name": "983014.png",
+        "type": "image/png",
+        "size": 693905
     }
 }
