@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+
+* {
+  outline:none;
+}
+body {
+  background:chartreuse;
+  font-family: "Roboto";
+  text-align:center;
+}
+button, input[type="submit"] {
+  background:white;
+  color:blue;
+  width:100px;
+  height:40px;
+  border:2px solid blue;
+  border-radius:5px;
+  cursor:pointer;
+  user-select:none;
+}
+button:hover, input[type="submit"]:hover {
+  transition:all 0.3s ease-in-out;
+  background:blue;
+  color:white;
+}
+form, div {
+  margin-top:5%;
+  border:3px solid blue;
+  width:50%;
+  margin-right:25%;
+  margin-left:25%;
+}
+input[type="text"] {
+  height:25px;
+  font-size:20px;
+  border:2px solid blue;
+  border-radius:5px;
+  width:500px;
+}

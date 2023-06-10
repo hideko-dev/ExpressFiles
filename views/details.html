@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="/details.css" />
+		<title>Welcome</title>
+	</head>
+	<body>
+		<div class="background">
+            <div class="form-card">
+                <div class="form-title">
+                    ExpressFiles 👋
+                </div>
+
+                <div class="form-subtitle">
+                    Upload yours any files. Max 100MB
+                </div>
+                <div class="auth">
+                    <div class="auth-label">Download URL</div>
+                    <input class="auth-input" value="http://localhost:3000/uploads/<%= filename %>" type="text" readonly>
+                    <button class="auth-button" type="submit" onclick="copyLink()">Copy URL</Button>
+                    <button class="auth-button" onclick="location.href = '/'">Upload another</button>
+                </div>
+            </div>
+		</div>
+        <script>
+            function copyLink(){
+              document.querySelector("input").select();
+              document.execCommand("copy");
+              window.getSelection().removeAllRanges();
+            }
+          </script>
+	</body>
+</html>

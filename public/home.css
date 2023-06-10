@@ -1,0 +1,129 @@
+body {
+    background-image: url('back.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(75deg, rgb(33, 34, 36) 0%, rgba(40, 43, 54, 0.911) 50%, rgba(40, 43, 54, 0) 100%);
+    /* Vertical center */
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.form-card {
+    width: 50%;
+    max-width: 380px;
+    padding: 0% 25% 0% 20%;
+}
+
+.form-title { 
+    font-size: 42px; 
+    font-family: 'Arial'; 
+    font-weight: 800; 
+    letter-spacing: 0.5px; 
+    color: #e8e8e8; 
+    padding-bottom: 12px; 
+}
+
+.form-subtitle {
+    font-size: 18px;
+    font-family: 'Avenir';
+    letter-spacing: 0.5px;
+    color: #afafaf;
+    padding-bottom: 24px;
+}
+
+.auth {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 12px;
+}
+.auth-label {
+    position: absolute;
+    top: 8px;
+    left: 18px;
+    font-size: 11px;
+    color: rgb(175, 175, 175);
+    font-family: Avenir;
+    width: 100px;
+}
+.auth-input {
+    background-color: #3e404b;
+    color: white;
+    font-family: "Avenir";
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 24px 18px 12px 18px;
+    width: calc(100% - 18px - 18px);
+    margin-bottom: 12px;
+}
+.auth-button {
+    width: 100%;
+    height: 53px;
+    color: white;
+    background-color: #fa541c;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-family: "Avenir";
+    cursor: pointer;
+    transition: all .44s ease;
+    -webkit-transition: all .44s ease;
+    -moz-transition: all .44s ease;
+}
+.auth-button:hover { filter: brightness(145%); }
+
+#youtube-link {
+    bottom: 10px;
+  }
+  
+  #youtube-link > i {
+    color: rgb(239, 83, 80);
+  }
+  
+  #source-link {
+    bottom: 60px;
+  }
+  
+  #source-link > i {
+    color: rgb(94, 106, 210);
+  }
+  
+  .link {
+    align-items: center;
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;  
+    display: inline-flex;
+    gap: 5px;
+    left: 10px;
+    padding: 10px 20px;
+    position: fixed;
+    text-decoration: none;
+    z-index: 100;
+  }
+  
+  .link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .link > i, .link > span {
+    height: 20px;
+    line-height: 20px;
+  }
+  
+  .link > span {
+    color: white;
+  }

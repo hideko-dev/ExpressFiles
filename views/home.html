@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link href='https://unpkg.com/css.gg/icons/all.css' rel='stylesheet'><link rel="stylesheet" href="/home.css" />
+		<title>Welcome</title>
+	</head>
+	<body>
+		<div class="background">
+            <div class="form-card">
+                <div class="form-title">
+                    ExpressFiles 👋
+                </div>
+
+                <div class="form-subtitle">
+                    Upload yours any files. Max 100MB
+                </div>
+                <div class="auth">
+                    <!-- <div class="auth-label">Username</div>
+                    <input class="auth-input" name="username" />
+                    <button class="auth-button" type="submit">Authenticate</Button> -->
+                    <form method="post" action="/upload" enctype="multipart/form-data"><br>
+                        <input name="file" type="file" id="input" style="display:none">
+                        <input class="auth-button" type="submit" value="Upload" id="upload">
+                        <h3 style="display:none" id="uploading">Uploading...</h3>
+                    </form>
+                </div>
+            </div>
+		</div>
+        <script>
+            document.getElementById("upload").addEventListener("click", e => {
+              e.preventDefault();
+              document.getElementById("input").click();
+            });
+            document.getElementById("input").addEventListener("change", () => {
+              document.querySelector("form").submit();
+              document.getElementById("uploading").style.display = "block";
+            });
+          </script>
+	</body>
+</html>
+<a id="source-link" class="link" href="https://linear.app/features" target="_blank">
+    <i class="gg-ruler"></i>
+    <br><span class="roboto-mono">Source</span>
+  </a>
+  
+  <a id="youtube-link" class="link" href="https://youtu.be/htGfnF1zN4g" target="_blank">
+    <i class="gg-loadbar-doc"></i>
+    <br><span>Developer Site</span>
+  </a>
